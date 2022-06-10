@@ -4,6 +4,11 @@ body {
 }
 
 body {
+  @extend %dm-400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+  background-color: #fff;
 }
 
 .lock {
@@ -87,4 +92,16 @@ body {
 }
 .burger--active span {
   transform: scale(0);
+}
+
+.button {
+  min-width: 173px;
+  padding: 20px 34px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }

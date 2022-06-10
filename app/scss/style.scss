@@ -4,4 +4,61 @@
 @import "libs";
 @import "global";
 
+// header
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  &__inner {
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+  }
+  &__menu {
+  }
+  &__links {
+  }
+  &__link {
+    padding: 11px 0;
+    margin-right: 48px;
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
+  &__link--sign {
+    padding: 10.5px 16px;
+    background-color: $accent;
+    color: #fff;
+    border-radius: 4px;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    margin-right: 48px;
+  }
+
+  &__list-item:last-child {
+    margin-right: 0;
+  }
+  &__list-link {
+    padding: 11px 0;
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #1a1a1a;
+  }
+}
+
 @import "media";
