@@ -11,6 +11,7 @@
   width: 100%;
   top: 40px;
   left: 0;
+  z-index: 999;
   &__inner {
     min-height: 42px;
     display: flex;
@@ -143,6 +144,160 @@
     height: 48px;
     background: #edffdd;
     border-radius: 4px;
+  }
+}
+
+.top {
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding-top: 52px;
+    position: relative;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  &__content:after {
+    content: "";
+    position: absolute;
+    bottom: 110px;
+    right: -80px;
+    z-index: -1;
+    width: 157px;
+    height: 193px;
+    background-image: url("../images/leaves.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+  &__title {
+    margin-bottom: 24px;
+    @extend %nunito-700;
+    font-size: 72px;
+    line-height: 92px;
+    color: $title;
+  }
+  &__text {
+    margin-bottom: 40px;
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $default;
+  }
+  &__text p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &__links {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__link {
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 110px;
+  }
+  &__item {
+    flex-direction: column;
+  }
+  &__item-value {
+    display: inline-block;
+    margin-bottom: 10px;
+    @extend %nunito-700;
+    font-size: 36px;
+    line-height: 49px;
+    color: $title-2;
+  }
+  &__item-title {
+    @extend %dm-400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $title;
+  }
+  &__img {
+    position: relative;
+    max-width: 557px;
+    width: 100%;
+    margin-right: -40px;
+  }
+  &__img-item {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__img-item--active {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__img-item:hover .item__dot-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__img-item--position-1 {
+    top: 80px;
+    right: -50px;
+  }
+  &__img-item--position-2 {
+    top: 160px;
+    left: -70px;
+  }
+  &__img-item--position-3 {
+    bottom: 120px;
+    right: -100px;
+  }
+}
+.item {
+  &__dot {
+    display: flex;
+    align-items: center;
+  }
+  &__dot-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  &__dot-content {
+    margin-left: 107px;
+    background: rgba($accent, 0.7);
+    padding: 16px 32px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    @extend %dm-400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  &__dot-content:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 115px;
+    height: 4px;
+    background: #519a5a;
+  }
+  &__dot-content--special {
+    margin-left: 0;
+    margin-right: 107px;
+    order: -1;
+  }
+  &__dot-content--special:after {
+    left: 157px;
+  }
+
+  &__dot-content--active {
+    opacity: 1;
+    visibility: visible;
   }
 }
 

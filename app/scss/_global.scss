@@ -94,14 +94,28 @@ body {
   transform: scale(0);
 }
 
-.button {
-  min-width: 173px;
-  padding: 20px 34px;
+.link {
   display: inline-block;
+  min-height: 55px;
+  padding: 16px 32px;
+  @extend %dm-500;
   font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+  line-height: 23px;
+
   color: #fff;
-  border: none;
-  cursor: pointer;
+
+  background: $accent;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  background-color: #1aa92d;
+}
+
+.main {
+  &__top {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
 }
