@@ -84,8 +84,6 @@
   &__info-text p:not(:last-child) {
     margin-bottom: 5px;
   }
-  &__info-social {
-  }
   &__navigation {
     max-width: 645px;
     width: 100%;
@@ -98,8 +96,6 @@
   }
   &__navigation-item:last-child {
     padding-right: 0;
-  }
-  &__menu {
   }
   &__menu-title {
     margin-bottom: 24px;
@@ -196,8 +192,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-  &__link {
-  }
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -232,10 +226,6 @@
   }
 
   &__img-item--active {
-    opacity: 1;
-    visibility: visible;
-  }
-  &__img-item:hover .item__dot-content {
     opacity: 1;
     visibility: visible;
   }
@@ -360,8 +350,61 @@
     align-items: center;
     justify-content: center;
   }
-  &__item-img {
+}
+
+// about
+.about {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 446px;
+    width: 100%;
+    margin-right: 150px;
+    background-color: $accent;
+    max-height: 440px;
+  }
+  &__img-wrapper {
+    transform: translate3d(70px, 40px, 0);
+  }
+  &__content {
+    max-width: 505px;
+    width: 100%;
+  }
+  &__suptitle {
+    margin-bottom: 12px;
+    @extend %dm-500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $accent;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    margin-bottom: 16px;
+  }
+  &__text p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &__article {
+    margin-bottom: 36px;
+    @extend %dm-500;
+    font-size: 18px;
+    line-height: 29px;
+    color: $default;
+  }
+  &__article p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
+
+// 
 
 @import "media";

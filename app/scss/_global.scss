@@ -113,12 +113,24 @@ body {
   background-color: #1aa92d;
 }
 
+.title {
+  @extend %nunito-700;
+  font-size: 40px;
+  line-height: 50px;
+  color: $title;
+}
+
 .main {
   &__top {
     padding-top: 120px;
     padding-bottom: 50px;
   }
-  &__collection{
-    
+  &__collection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__about {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
