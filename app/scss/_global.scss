@@ -11,6 +11,14 @@ body {
   background-color: #fff;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -130,6 +138,10 @@ body {
     padding-bottom: 50px;
   }
   &__about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__product {
     padding-top: 50px;
     padding-bottom: 50px;
   }
