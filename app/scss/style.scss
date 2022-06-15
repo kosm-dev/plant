@@ -411,10 +411,6 @@
 //
 
 .product {
-  &__inner {
-  }
-  &__top {
-  }
   &__title {
     margin-bottom: 24px;
     text-align: center;
@@ -443,8 +439,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-  }
-  &__link {
   }
   .jq-ry-container {
     padding: 0;
@@ -495,6 +489,71 @@
     font-size: 16px;
     line-height: 19px;
     color: #1a1a1a;
+  }
+}
+
+.subscribe {
+  &__inner {
+    position: relative;
+    padding: 60px 0;
+    padding-right: 300px;
+    padding-left: 60px;
+    background: #dfffe3;
+    border-radius: 6px;
+  }
+  &__inner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    width: 262px;
+    height: 356px;
+    background-image: url("../images/subscribe/plant-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__content {
+    max-width: 480px;
+    width: 100%;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__text p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &__form {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+.form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px 8px 8px 20px;
+  &__input {
+    flex: 0 1 100%;
+    border: none;
+  }
+  &__input::placeholder {
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+  }
+  &__btn {
+    flex: 1 0 100px;
+    padding: 11px 16px;
+    background-color: $accent;
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fefefe;
+    border-radius: 4px;
   }
 }
 
