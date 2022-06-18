@@ -1,6 +1,6 @@
 $(function () {
   // rateyo
- $(".star").rateYo({
+  $(".star").rateYo({
     starWidth: "16px",
     normalFill: "transparent",
     ratedFill: "#F4C300",
@@ -10,6 +10,22 @@ $(function () {
   });
   // mix
   var mixer = mixitup('.product__items');
+
+});
+
+
+let swiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
 });
 
