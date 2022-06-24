@@ -162,3 +162,17 @@ button {
     padding-bottom: 50px;
   }
 }
+
+@media (max-width: $xxl) {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: $md) {
+  .title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
