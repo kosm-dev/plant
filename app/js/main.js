@@ -11,6 +11,12 @@ $(function () {
   // mix
   var mixer = mixitup('.product__items');
 
+  // tabs
+
+  $('.item-dot').on('click', function () {
+    $(this).toggleClass('active');
+  });
+
 });
 
 
@@ -28,8 +34,24 @@ let swiper = new Swiper('.reviews-slider', {
   },
 
 });
+// tabs
+const dots = document.querySelectorAll(".item-dot__icon");
+dots.forEach(function (dot) {
+  dot.addEventListener("click", dotClick);
+});
+function dotClick() {
+  this.nextElementSibling.classList.toggle("item-dot__content--active");
+}
 
 
+// burger
 
+const burger = document.querySelector('.burger'),
+  menu = document.querySelector('.header__menu'),
+  body = document.querySelector('body');
 
-
+burger.addEventListener('click', (e) => {
+  e.target.classList.toggle('burger--active');
+  menu.classList.toggle('header__menu--active');
+  body.classList.toggle('lock');
+});
