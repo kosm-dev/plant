@@ -175,6 +175,35 @@ button {
     font-size: 25px;
     line-height: 35px;
   }
+
+  .main {
+    &__top {
+      padding-bottom: 25px;
+    }
+    &__collection {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__about {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__product {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__subscribe {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__follow {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &__reviews {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
 }
-
-

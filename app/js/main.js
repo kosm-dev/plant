@@ -21,17 +21,24 @@ $(function () {
 
 
 let swiper = new Swiper('.reviews-slider', {
-  // Optional parameters
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  autoplay: {
+    delay: 5000,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      navigation: {
+        enabled: false
+      }
+    },
+
+  }
 
 });
 // tabs
