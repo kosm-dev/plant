@@ -1,0 +1,94 @@
+.subscribe {
+  &__container {
+    max-width: 1040px;
+  }
+  &__inner {
+    position: relative;
+    padding: 60px 0;
+    padding-right: 300px;
+    padding-left: 60px;
+    background: #dfffe3;
+    border-radius: 6px;
+  }
+  &__inner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    width: 262px;
+    height: 356px;
+    background-image: url("../images/subscribe/plant-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__content {
+    max-width: 480px;
+    width: 100%;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__text p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  &__form {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+.form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px 8px 8px 20px;
+  &__input {
+    flex: 0 1 100%;
+    border: none;
+  }
+  &__input::placeholder {
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+  }
+  &__btn {
+    flex: 1 0 100px;
+    padding: 11px 16px;
+    background-color: $accent;
+    @extend %dm-400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fefefe;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: $md) {
+  .subscribe__inner::after {
+    display: none;
+  }
+  .subscribe__inner {
+    padding: 20px;
+  }
+  .subscribe__content {
+    max-width: none;
+  }
+  .subscribe__form {
+    max-width: none;
+  }
+}
+
+@media (max-width: $sm) {
+  .subscribe__form {
+    flex-wrap: wrap;
+  }
+  .form {
+    padding: 10px;
+  }
+  .form__input {
+    margin-bottom: 20px;
+  }
+}
