@@ -37,6 +37,7 @@ function scripts() {
     'node_modules/rateyo/src/jquery.rateyo.js',
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/wow.js/dist/wow.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
