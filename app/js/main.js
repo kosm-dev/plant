@@ -57,8 +57,8 @@ const burger = document.querySelector('.burger'),
   menu = document.querySelector('.header__menu'),
   body = document.querySelector('body');
 
-burger.addEventListener('click', (e) => {
-  e.target.classList.toggle('burger--active');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
   menu.classList.toggle('header__menu--active');
   body.classList.toggle('lock');
 });
@@ -72,5 +72,5 @@ wow = new WOW(
     mobile: true,       // default
     live: true        // default
   }
-)
+);
 wow.init();
